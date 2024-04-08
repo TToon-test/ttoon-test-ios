@@ -16,6 +16,10 @@
 		483C45452BBA7A4C009DD2F9 /* TToonTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C45442BBA7A4C009DD2F9 /* TToonTestTests.swift */; };
 		483C454F2BBA7A4C009DD2F9 /* TToonTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C454E2BBA7A4C009DD2F9 /* TToonTestUITests.swift */; };
 		483C45512BBA7A4C009DD2F9 /* TToonTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C45502BBA7A4C009DD2F9 /* TToonTestUITestsLaunchTests.swift */; };
+		487E410E2BC3B6CD00640628 /* AppleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487E410D2BC3B6CD00640628 /* AppleLoginViewController.swift */; };
+		487E41102BC3B6D300640628 /* AppleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487E410F2BC3B6D300640628 /* AppleLoginViewModel.swift */; };
+		487E41132BC3B77000640628 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 487E41122BC3B77000640628 /* SnapKit */; };
+		487E41162BC3C29400640628 /* AppleLoginSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487E41152BC3C29400640628 /* AppleLoginSuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		483C454A2BBA7A4C009DD2F9 /* TToonTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TToonTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		483C454E2BBA7A4C009DD2F9 /* TToonTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TToonTestUITests.swift; sourceTree = "<group>"; };
 		483C45502BBA7A4C009DD2F9 /* TToonTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TToonTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		487E410D2BC3B6CD00640628 /* AppleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginViewController.swift; sourceTree = "<group>"; };
+		487E410F2BC3B6D300640628 /* AppleLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginViewModel.swift; sourceTree = "<group>"; };
+		487E41142BC3B86000640628 /* TToonTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TToonTest.entitlements; sourceTree = "<group>"; };
+		487E41152BC3C29400640628 /* AppleLoginSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginSuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487E41132BC3B77000640628 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +108,8 @@
 		483C452C2BBA7A4B009DD2F9 /* TToonTest */ = {
 			isa = PBXGroup;
 			children = (
+				487E41142BC3B86000640628 /* TToonTest.entitlements */,
+				487E410C2BC3B6BF00640628 /* AppleLoginTest */,
 				483C452D2BBA7A4B009DD2F9 /* AppDelegate.swift */,
 				483C452F2BBA7A4B009DD2F9 /* SceneDelegate.swift */,
 				483C45312BBA7A4B009DD2F9 /* ViewController.swift */,
@@ -127,6 +138,16 @@
 			path = TToonTestUITests;
 			sourceTree = "<group>";
 		};
+		487E410C2BC3B6BF00640628 /* AppleLoginTest */ = {
+			isa = PBXGroup;
+			children = (
+				487E410D2BC3B6CD00640628 /* AppleLoginViewController.swift */,
+				487E410F2BC3B6D300640628 /* AppleLoginViewModel.swift */,
+				487E41152BC3C29400640628 /* AppleLoginSuccessViewController.swift */,
+			);
+			path = AppleLoginTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +164,9 @@
 			dependencies = (
 			);
 			name = TToonTest;
+			packageProductDependencies = (
+				487E41122BC3B77000640628 /* SnapKit */,
+			);
 			productName = TToonTest;
 			productReference = 483C452A2BBA7A4B009DD2F9 /* TToonTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 483C45212BBA7A4B009DD2F9;
+			packageReferences = (
+				487E41112BC3B77000640628 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 483C452B2BBA7A4B009DD2F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +288,9 @@
 				483C45322BBA7A4B009DD2F9 /* ViewController.swift in Sources */,
 				483C452E2BBA7A4B009DD2F9 /* AppDelegate.swift in Sources */,
 				483C45302BBA7A4B009DD2F9 /* SceneDelegate.swift in Sources */,
+				487E410E2BC3B6CD00640628 /* AppleLoginViewController.swift in Sources */,
+				487E41102BC3B6D300640628 /* AppleLoginViewModel.swift in Sources */,
+				487E41162BC3C29400640628 /* AppleLoginSuccessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TToonTest/TToonTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S9WHYP486;
@@ -468,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TToonTest/TToonTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S9WHYP486;
@@ -607,6 +639,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		487E41112BC3B77000640628 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		487E41122BC3B77000640628 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 487E41112BC3B77000640628 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 483C45222BBA7A4B009DD2F9 /* Project object */;
 }
