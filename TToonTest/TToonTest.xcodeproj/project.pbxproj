@@ -18,6 +18,7 @@
 		483C45512BBA7A4C009DD2F9 /* TToonTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C45502BBA7A4C009DD2F9 /* TToonTestUITestsLaunchTests.swift */; };
 		487E410E2BC3B6CD00640628 /* AppleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487E410D2BC3B6CD00640628 /* AppleLoginViewController.swift */; };
 		487E41102BC3B6D300640628 /* AppleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487E410F2BC3B6D300640628 /* AppleLoginViewModel.swift */; };
+		487E41132BC3B77000640628 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 487E41122BC3B77000640628 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487E41132BC3B77000640628 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +159,9 @@
 			dependencies = (
 			);
 			name = TToonTest;
+			packageProductDependencies = (
+				487E41122BC3B77000640628 /* SnapKit */,
+			);
 			productName = TToonTest;
 			productReference = 483C452A2BBA7A4B009DD2F9 /* TToonTest.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 483C45212BBA7A4B009DD2F9;
+			packageReferences = (
+				487E41112BC3B77000640628 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 483C452B2BBA7A4B009DD2F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -623,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		487E41112BC3B77000640628 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		487E41122BC3B77000640628 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 487E41112BC3B77000640628 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 483C45222BBA7A4B009DD2F9 /* Project object */;
 }
